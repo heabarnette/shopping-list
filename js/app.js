@@ -17,7 +17,7 @@ $(document).ready(function() {
 //	});
 //	$(':text').keyup(function() {
 //		alert("text was entered");
-	});
+//	});
 // add to list with enter
 	$('#textenter').submit(function(e) {
 		e.preventDefault();
@@ -26,8 +26,7 @@ $(document).ready(function() {
 
 	var additem = function(){
 		var add = $('#textenter').val();
-		var newitem = $('<li class=get"></li><button class="check"></button><span>' + 
-add + '</span><img class="remove" src='images/Button-Delete-icon.png'>');
+		var newitem = $('<li class="get"><button class="check"></button><span>'+add+'</span><img class="remove" src="images/Button-Delete-icon.png"></li>');
 		$('#list').append(newitem);
 		$('textenter').val('');
 	}
@@ -59,5 +58,5 @@ add + '</span><img class="remove" src='images/Button-Delete-icon.png'>');
 	});
 
 // sort items
-	$('#list').sortable({axis: "y"});
+//	$('#list').sortable({axis: "y"});
 });
