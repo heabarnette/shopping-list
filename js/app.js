@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$('#enter').click(function (e) {
 		e.preventDefault();
 		$('#textenter').submit();
-	});
+	})
 // alerts
 //	$('#enter').click(function() {
 //	alert("The button was clicked");
@@ -19,17 +19,24 @@ $(document).ready(function() {
 //		alert("text was entered");
 //	});
 // add to list with enter
-	$('#textenter').submit(function(e) {
-		e.preventDefault();
-		additem();
-	});
-
 	var additem = function(){
 		var add = $('#textenter').val();
-		var newitem = $('<li class="get"><button class="check"></button><span>'+add+'</span><img class="remove" src="images/Button-Delete-icon.png"></li>');
+		var newitem = $('<li><button class="check"></button><span>'+add+'</span><img class="remove" src="images/Button-Delete-icon.png"></li>');
 		$('#list').append(newitem);
 		$('textenter').val('');
 	}
+	$('#textenter').submit(function() {
+//		e.preventDefault();
+		var add = $('#textenter').val();
+		if (add) {
+			additem();
+		}
+		else {
+			alert ('Please enter an item');
+		}
+	})
+
+
 
 //		var add = document.getElementById('textenter');
 //		if(newitem.length < 1)
@@ -52,11 +59,11 @@ $(document).ready(function() {
 // hover makes delete button appear
 	$('#list').on('mousenter', 'li', function() {
 		$(this).children('.remove').toggleClass('show');
-	});
+	})
 	$('#list').on('mouseleave', 'li', function() {
 		$(this).children('.remove').toggleClass('show');
-	});
+	})
 
 // sort items
 //	$('#list').sortable({axis: "y"});
-});
+})
