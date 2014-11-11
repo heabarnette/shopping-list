@@ -1,0 +1,73 @@
+body {
+	background-color: #A9A9A9;
+
+}
+
+.container {
+	text-align: center;
+	background-color: #FAFAD2;
+	width: 20em;
+	margin: auto;
+}
+
+#logo {
+	margin-top: 1em;
+}
+
+.title {
+	font-family: Perpetua,Baskerville,"Big Caslon","Palatino Linotype",Palatino,"URW Palladio L","Nimbus Roman No9 L",serif
+}
+
+.listinput {
+	padding: 1em;
+}
+
+#textenter{
+
+}
+
+#enter {
+	
+}
+
+#list {
+	text-align: left;
+	list-style: none;
+	margin-bottom: 2em;
+}
+
+#list li {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.done {
+	text-decoration: line-through;
+}
+.get {
+
+}
+
+.check {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-right: 2em;
+	display: inline;
+	margin-top: .2em;
+}
+
+.check .done {
+	/* add check mark */
+}
+
+.remove {
+	max-height: 1em;
+	max-width: 1em;
+	float: right;
+	margin-right: 2em;
+/*	display: none; */
+}
+.show {
+	display: inline;
+}
