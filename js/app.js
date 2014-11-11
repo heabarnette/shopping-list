@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-// enter instead of button push
+// button push instead of enter
 //	$('#textenter').keyup(function(event) {
 //		if(event.keyCode == 13){
 //			event.preventDefault();
@@ -18,7 +18,7 @@ $(document).ready(function() {
 //	$(':text').keyup(function() {
 //		alert("text was entered");
 	});
-// add to list with button
+// add to list with enter
 	$('#textenter').submit(function(e) {
 		e.preventDefault();
 		additem();
