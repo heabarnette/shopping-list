@@ -49,11 +49,11 @@ $(document).ready(function() {
 //	})
 //
 // check off and uncheck items
-	$('.check').on('click', function () {
+	$('#list').on('click', '.check', function () {
 	$(this).closest('li').toggleClass('done');
 	})
 // remove items
-	$('.remove').on('click', function() {
+	$('#list').on('click', '.remove', function() {
 		$(this).closest('li').remove();
 	})
 // hover makes delete button appear
